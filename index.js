@@ -4,1150 +4,793 @@ const app = express();
 
 const characters = [
     {
-        image: '',
+        image: 'https://i.ibb.co/xgPLJPF/download-6.jpg',
         traits: '',
         tags: '',
         fullName: 'Robert Downey Jr',
         firstName: 'Robert'
     },
   {
-        image: '',
+        image: 'https://i.ibb.co/0J1XF2N/Fashion-Beans-Archives-Fashion-Beans.jpg',
         traits: '',
         tags: '',
         fullName: 'Ben Affleck',
         firstName: 'ben'
     },
 {
-        image: '',
+        image: 'https://i.ibb.co/3W1kYK8/download-7.jpg',
         traits: '',
         tags: '',
         fullName: 'salman khan',
         firstName: 'salman'
     },
   {
-      image: '',
+      image: 'https://i.ibb.co/17qMyx8/Johnny-Depp-Net-worth-2023.jpg',
       traits: '',
       tags: '',
       fullName: 'johnny deep',
       firstName: 'johnny'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/jMXKPbN/Tom-Cruise-reveals-Top-Gun-sequel-was-never-expected-to-happen-Here-s-why.jpg',
       traits: '',
       tags: '',
       fullName: 'Tom cruise',
       firstName: 'tom'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/sPtYdk6/download-8.jpg',
       traits: '',
       tags: '',
       fullName: 'Leonardo DiCaprio',
       firstName: 'Leonardo'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/ZxK8V3Q/Actor-who-played-Forrest-Gump-couldn-t-afford-to-go-to-the-Oscars.jpg',
       traits: '',
       tags: '',
       fullName: 'tom hanks',
       lastName: 'hanks'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/zNSpytk/download-9.jpg',
       traits: '',
       tags: '',
       fullName: 'hugh jackman',
       firstName: 'hugh'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/3WrY3j6/Will-Smith.jpg',
       traits: '',
       tags: '',
       fullName: 'will Smith',
       firstName: 'will'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/F6nHJp3/download-10.jpg',
       traits: '',
       tags: '',
       fullName: 'christian bale',
       firstName: 'christian'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/jTq1wJJ/download-11.jpg',
       traits: '',
       tags: '',
       fullName: 'keanu reevs',
       firstName: 'keanu'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/FgqZptG/Vin-Diesel-Stays-Confusingly-Cryptic-on-Marvel-s-Interesting-Plans.jpg',
       traits: '',
       tags: '',
       fullName: 'vin diesel',
       firstName: 'vin'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/9vwZfyB/Denzel-Washington-Photos-and-Premium-High-Res-Pictures.jpg',
       traits: '',
       tags: '',
       fullName: 'Denzel Washington',
       firstName: 'denzel'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/TBgMKZc/Nicolas-Cage-s-USS-Indy-movie-is-abysmal.jpg',
       traits: '',
       tags: '',
       fullName: 'nicolas cage',
       firstName: 'nicolas'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/bPrBwCN/Inside-Brad-Pitt-s-Big-Return-and-Why-He-s-Very-Excited-About-Life-Now.jpg',
       traits: '',
       tags: '',
       fullName: 'brad pitt',
       firstName: 'brad'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/0VTpKLc/matt-damon.jpg',
       traits: '',
       tags: '',
       fullName: 'Matt damon',
       firstName: ''
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/D797Y3z/download-12.jpg',
       traits: '',
       tags: '',
       fullName: 'tom hardy',
       firstName: 'tom'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/LDKBx1Y/download-13.jpg',
       traits: '',
       tags: '',
       fullName: 'Dwayne Johnson',
       firstName: 'dwayne'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/7nv1Mcg/download-14.jpg',
       traits: '',
       tags: '',
       fullName: 'henry cavill',
       firstName: 'henry'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/Ksdmgg9/Jason-Momoa-Aquaman-Tattoos-from-Justice-League.jpg',
       traits: '',
       tags: '',
       fullName: 'jason momoa',
       firstName: 'jason'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/58XV7bC/Actor-Ezra-Miller.jpg',
       traits: '',
       tags: '',
       fullName: 'ezra miller',
       firstName: 'ezra'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/djsrHzk/RAY-FISHER-for-The-Laterals-2019-ph-Aaron-Smith.jpg',
       traits: '',
       tags: '',
       fullName: 'ray fisher',
       firstName: 'ray'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/r5LJkyR/Steve-Rogers-icons.jpg',
       traits: '',
       tags: '',
       fullName: 'chris evans',
       firstName: 'chris'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/1qCgZYG/We-Need-To-Talk-About-Chris-Hemsworth-s-Left-Hand.jpg',
       traits: '',
       tags: '',
       fullName: 'Chris Hemsworth',
       firstName: 'Chris'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/N9Fjbtz/Cover-Story-Chris-Pratt-s-Call-to-Stardom.jpg',
       traits: '',
       tags: '',
       fullName: 'Chris Pratt',
       firstName: 'chris'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/RchQJq4/Mark-Ruffalo.jpg',
       traits: '',
       tags: '',
       fullName: 'mark ruffalo',
       firstName: 'mark'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/hmXdx2C/download-15.jpg',
       traits: '',
       tags: '',
       fullName: 'Anthony Mackie',
       firstName: 'anthony'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/Mhm2yDx/Basilio-Zabini.jpg',
       traits: '',
       tags: '',
       fullName: 'Don Cheadle',
       firstName: 'don'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/p0QwkCB/Jeremy-Renner-Says-Snowplow-Accident-Gave-Him-This-Shocking-Superpower.jpg',
       traits: '',
       tags: '',
       fullName: 'Jeremy Renner',
       firstName: 'jeremy'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/xz32Dv8/Scott-Lang-Marvel.jpg',
       traits: '',
       tags: '',
       fullName: 'Paul Rudd',
       firstName: 'paul'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/Xt6G1VK/Baby-Seb.jpg',
       traits: '',
       tags: '',
       fullName: 'Sebastian Stan',
       firstName: 'sebastian'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/dB46gQq/peter-parker-wallpaper.jpg',
       traits: '',
       tags: '',
       fullName: 'Tom Holland',
       firstName: 'tom'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/bLvq4xs/Bradley-Cooper.jpg',
       traits: '',
       tags: '',
       fullName: 'Bradley Cooper',
       firstName: 'bradley'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/BzzsnRj/T-Challa-Udaku-Marvel-1.jpg',
       traits: '',
       tags: '',
       fullName: 'Chadwick Boseman',
       firstName: 'Chadwick'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/jZK0TrY/HAPPY-51st-BIRTHDAY-to-DAVE-BAUTISTA-1-18-20-American-actor-retired-professional-wrestler-former-mix.jpg',
       traits: '',
       tags: '',
       fullName: 'Dave Bautista',
       firstName: 'dave'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/FxF9RKW/stephen-strange-wallpaper.jpg',
       traits: '',
       tags: '',
       fullName: 'Benedict Cumberbatch',
       firstName: 'benedict'
   },
   {
-      image: '',
-      traits: '',
-      tags: '',
-      fullName: 'Anthony Mackie',
-      firstName: 'anthony'
-  },
-  {
-      image: '',
-      traits: '',
-      tags: '',
-      fullName: 'Sebastian Stan',
-      firstName: 'stan'
-  },
-  {
-      image: '',
+      image: 'https://i.ibb.co/BzHVTgG/Simu-Liu-on-His-Journey-from-Scared-Asian-Guy-to-Marvel-Superhero.jpg',
       traits: '',
       tags: '',
       fullName: 'Simu Liu',
       firstName: 'simu'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/fCcF6SB/Justin-Timberlake-et-Jessica-Biel-stars-des-Critics-Choice-Awards-Elle.jpg',
       traits: '',
       tags: '',
       fullName: 'Ryan Reynolds',
       firstName: 'ryan'
   },
   {
-      image: '',
-      traits: '',
-      tags: '',
-      fullName: 'Hugh Jackman',
-      firstName: 'huge'
-  },
-  {
-      image: '',
+      image: 'https://i.ibb.co/qF6PKCf/scarlett-johansson.jpg',
       traits: '',
       tags: '',
       fullName: 'Natasha Romanoff',
       firstName: 'natasha'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/W5tXQxR/INDOWIN88-Situs-Slot-online-yang-Gacor-Terkenal-Sering-Kasih-Maxwin.jpg',
       traits: '',
       tags: '',
       fullName: 'Antony Starr',
       firstName: 'antony'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/wKXvZCT/X-It-s-what-s-happening.jpg',
       traits: '',
       tags: '',
       fullName: 'Karl Urban',
       firstName: 'karl'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/SRPWF0F/download-16.jpg',
       traits: '',
       tags: '',
       fullName: 'Jack Quaid',
       firstName: 'jack'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/b56GdXG/Giancarlo-Esposito.jpg',
       traits: '',
       tags: '',
       fullName: 'Giancarlo Esposito',
       firstName: 'giancarlo'
   }, 
   {
-      image: '',
+      image: 'https://i.ibb.co/TTK2FRw/image.jpg',
       traits: '',
       tags: '',
       fullName: 'Paul Walker',
       firstName: 'paul'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/j67WPQK/download-17.jpg',
       traits: '',
       tags: '',
       fullName: 'Jason Stath',
       firstName: 'jason'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/j420Q1p/Ludacris-Net-worth-2023.jpg',
       traits: '',
       tags: '',
       fullName: 'ludacris',
       firstName: 'luda'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/SnTQmwy/download-18.jpg',
       traits: '',
       tags: '',
       fullName: 'Gal Gadot',
       firstName: 'gal'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/SnTQmwy/download-18.jpg',
       traits: '',
       tags: '',
       fullName: 'lucas black',
       firstName: 'lucas'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/HNy2d68/Bet-You-Can-t-Get-Through-These-John-Cena-Pictures-Without-Drooling-Just-a-Little.jpg',
       traits: '',
       tags: '',
       fullName: 'jhon cena',
       firstName: 'jhon'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/C9DjCy3/Alan-Ritchson-habla-de-la-temporada-3-de-Reacher.jpg',
       traits: '',
       tags: '',
       fullName: 'Alan Ritchson',
       firstName: 'alan'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/hfZ97Zy/download-19.jpg',
       traits: '',
       tags: '',
       fullName: 'Jensen Ackles',
       firstName: 'jensen'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/Jk5Jf4H/henry-ballentine-magnolia-parks-universe-by-jessa-haistings-fc-chace-crawford.jpg',
       traits: '',
       tags: '',
       fullName: 'Chace Crawford',
       firstName: 'chace'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/c311PMV/jessie-usher-photography.jpg',
       traits: '',
       tags: '',
       fullName: 'Jessie T. Usher',
       firstName: 'jessie'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/cgxFqQC/Lee-Jung-jae.jpg',
       traits: '',
       tags: '',
       fullName: 'Lee Jung-jae',
       firstName: 'lee'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/7RyGrPD/Squid-Game-Actor-Park-Hae-Soo-Welcome-His-First-Child.jpg',
       traits: '',
       tags: '',
       fullName: 'Park Hae-soo',
       firstName: 'park'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/zQRn717/Alvaro-morte.jpg',
       traits: '',
       tags: '',
       fullName: 'Álvaro Morte',
       firstName: 'alvaro'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/pL3GWZK/Montre-Berlin-Netflix.jpg',
       traits: '',
       tags: '',
       fullName: 'Pedro Alonso',
       firstName: 'pedro'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/BGg3ynx/download-20.jpg',
       traits: '',
       tags: '',
       fullName: 'Miguel Herrán',
       firstName: 'miguel'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/yBv3SKr/Jaime-Lorente-27-anos-1991.jpg',
       traits: '',
       tags: '',
       fullName: 'Jaime Lorente',
       firstName: 'jaime'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/bLrxHtD/Aamir-Khan-Aamir-Khan.jpg',
       traits: '',
       tags: '',
       fullName: 'amir khan',
       firstName: 'amir'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/KjD2Nf1/Akshay-Kumar-filmfare-Photographed-by-Abhay-Singh-Film-Fare-Photoshoot-Fashion-Style-Bollywood-India.jpg',
       traits: '',
       tags: '',
       fullName: 'akshay Kumar',
       firstName: 'akshay'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/87Wt75z/Ajay-Devgn.jpg',
       traits: '',
       tags: '',
       fullName: 'ajay devgn',
       firstName: 'ajay'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/5h7SDJD/Amjad-Khan.jpg',
       traits: '',
       tags: '',
       fullName: 'amjad khan',
       firstName: 'amjad'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/rsmQxVF/12-Bollywood-Actors-Who-Faced-Struggles-Before-Proving-Dreams-Do-Come-True.jpg',
       traits: '',
       tags: '',
       fullName: 'amitabh bachchan',
       firstName: 'amitabh'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/K9tJBL2/download-21.jpg',
       traits: '',
       tags: '',
       fullName: 'akshaye khanna',
       firstName: 'akshaye'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/MRvH6j9/The-10-Best-Beard-Styles-Of-2020-Inspired-By-Bollywood.jpg',
       traits: '',
       tags: '',
       fullName: 'ranbir sing',
       firstName: 'ranbir'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/w64bFL2/download-22.jpg',
       traits: '',
       tags: '',
       fullName: 'Ranbir Kapoor',
       firstName: 'ranbir'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/LZRxgYV/A-very-Happy-Birthday-to-the-Circuit-aka-Arshad-Warsi-who-has-done-brilliant-acting-in-the-bollywood.jpg',
       traits: '',
       tags: '',
       fullName: 'arshad warsi',
       firstName: 'arshad'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/1RL9WD9/Happy-Birthday-Ayushmann.jpg',
       traits: '',
       tags: '',
       fullName: 'Ayushmann Khurrana',
       firstName: 'ayushman'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/xJ4D2YL/Jaipur-Ashish-Vidyarthi-during-a-programme-Gallery-Social-News-XYZ.jpg',
       traits: '',
       tags: '',
       fullName: 'Ashish Vidyarthi',
       firstName: 'ashish'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/tPy7Ffz/download-23.jpg',
       traits: '',
       tags: '',
       fullName: 'Anil Kapoor',
       firstName: 'anil'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/g60fcPW/download-24.jpg',
       traits: '',
       tags: '',
-      fullName: 'amrish pri',
+      fullName: 'amrish puri',
       firstName: 'amrish'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/ng9Vctp/Boman-Irani.jpg',
       traits: '',
       tags: '',
       fullName: 'boman irani',
       firstName: 'boman'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/BGJ0LF1/HBDMEGASTARCHIRANJEEVI-Megastar-Chiranjeevi-Boss-Gangleader-Chiranjeevi-HD-wallpapers.jpg',
       traits: '',
       tags: '',
       fullName: 'Chiranjeevi',
       firstName: 'chiran'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/2dbcJr2/Chunky-Pandey.jpg',
       traits: '',
       tags: '',
       fullName: 'Chunky Pandey',
       firstName: 'chunky'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/M8x8cVN/Dharmendra-or-Dharam-Singh-Deol.jpg',
       traits: '',
       tags: '',
       fullName: 'Dharmendra sing',
       firstName: 'dharmendra'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/YXW3RjK/Farhan-Akhtar-Amitabh-Bahchan-s-Wazir-movie-will-release-on-2nd-October-2015.jpg',
       traits: '',
       tags: '',
       fullName: 'Farhan akhtar',
       firstName: 'farhan'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/NtR6CXq/34a3259a6e166afae40438a5740d4348.jpg',
       traits: '',
       tags: '',
       fullName: 'kapil sharma',
       firstName: 'kapil'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/ctnSrg1/Hrithik-Roshan-attends-the-European-Premiere-of-Kites-at-Odeon-West.jpg',
       traits: '',
       tags: '',
       fullName: 'Hrithik Roshan',
       firstName: 'Hrithik'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/sHbMR5R/Irrfan-Khan-Made-Us-All-Feel-Like-We-Had-a-Story-to-Tell.jpg',
       traits: '',
       tags: '',
       fullName: 'Irrfan Khan',
       firstName: 'irrfan'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/ZTR3B4S/Jackie-Shroff-narrates-Hall-of-Fame-light-and-sound-show-in-Leh-on-Martyrs-039-Day.jpg',
       traits: '',
       tags: '',
       fullName: 'Jackie Shroff',
       firstName: 'jackie'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/qMSHM7y/Happy-Birthday-Johny-Lever-14-08-Tell-us-which-are-your-favorite-films-of-him.jpg',
       traits: '',
       tags: '',
       fullName: 'Johny Lever',
       firstName: 'johny'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/pvkbtnG/G-Venket-Ram-Photography-Bigg-Boss-Kamal-Haasan.jpg',
       traits: '',
       tags: '',
       fullName: 'Kamal Haasan',
       firstName: 'kamal'
   }, 
   {
-      image: '',
-      traits: '',
-      tags: '',
-      fullName: 'kader khan',
-      firstName: 'kader'
-  },
-  {
-      image: '',
-      traits: '',
-      tags: '',
-      fullName: 'Kay Kay Menon',
-      firstName: 'kay'
-  },
-  {
-      image: '',
-      traits: '',
-      tags: '',
-      fullName: 'Kapil Sharma',
-      firstName: 'kapil'
-  },
-  {
-      image: '',
-      traits: '',
-      tags: '',
-      fullName: 'Krushna Abhishek',
-      firstName: 'krushna'
-  },
-  {
-      image: '',
+      image: 'https://i.ibb.co/W0K7JNn/download-25.jpg',
       traits: '',
       tags: '',
       fullName: 'Mithun Chakraborty',
       firstName: 'mithun'
   },
   {
-      image: '',
-      traits: '',
-      tags: '',
-      fullName: 'Mukul Dev',
-      firstName: 'mukul'
-  },
-  {
-      image: '',
-      traits: '',
-      tags: '',
-      fullName: 'Nagarjuna Akkineni',
-      firstName: 'nagarjuna'
-  },
-  {
-      image: '',
+      image: 'https://i.ibb.co/VmJw3VT/EXCLUSIVE-Aaliya-Siddiqui-recalls-good-old-days-with-ex-husband-Nawazuddin-Siddiqui-He-d-borrow.jpg',
       traits: '',
       tags: '',
       fullName: 'Nawazuddin Siddiqui',
       firstName: 'nawazuddin'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/23LsbP0/0e7ee710179d7ca2a35ffa98ac7ecb79.jpg',
       traits: '',
       tags: '',
       fullName: 'Pankaj Tripathi',
       firstName: 'pankaj'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/kQQrcQL/2a54ffeea426d838ef627d3cb6905b79.jpg',
       traits: '',
       tags: '',
       fullName: 'Paresh Rawal',
       firstName: 'paresh'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/wzF6RNr/Prakash-Raj-s-Life-Divorce-From-First-Wife-Death-Of-His-5-Year-Old-Son-And-Second-Marriage-At-45.jpg',
       traits: '',
       tags: '',
       fullName: 'Prakash Raj',
       firstName: 'prakash'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/prhJmq1/Prabhu-Deva-In-Troy-Costa-Screen-Awards-2013-troycosta-menswear.jpg',
       traits: '',
       tags: '',
       fullName: 'Prabhu Deva',
       firstName: 'prabu'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/KjXy2f2/Prabhas.jpg',
       traits: '',
       tags: '',
       fullName: 'Venkata Satyanarayana Prabhas Raju Uppalapati',
       firstName: 'prabhas'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/4KZsMZT/Bobby-Deol-turned-alcoholic-during-low-phase-of-career.jpg',
       traits: '',
       tags: '',
       fullName: 'Bobby Deol',
       firstName: 'bobby'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/x5cS011/shahrukh-khan-pathan.jpg',
       traits: '',
       tags: '',
       fullName: 'shahrukh khan',
       firstName: 'sharukh'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/MR3ccNs/download-26.jpg',
       traits: '',
       tags: '',
       fullName: 'Shivaji Rao Gaikwad',
       firstName: 'Rajinikanth'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/smd0PJv/Rishi-Kapoor.jpg',
       traits: '',
       tags: '',
       fullName: 'rishi kapoor',
       firstName: 'rishi'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/QmC7FLG/download-27.jpg',
       traits: '',
       tags: '',
       fullName: 'Riteish Deshmukh',
       firstName: 'riteish'
   },
   {
-      image: '',
-      traits: '',
-      tags: '',
-      fullName: 'Rajpal Naurang Yadav',
-      firstName: 'rajpal'
-  },
-  {
-      image: '',
-      traits: '',
-      tags: '',
-      fullName: 'Shakti Kapoor',
-      firstName: 'shakti'
-  },
-  {
-      image: '',
+      image: 'https://i.ibb.co/2vthxp0/Saif-Ali-Khan-the-top-cop-in-Vikram-Vedha-look-out-now.jpg',
       traits: '',
       tags: '',
       fullName: 'Saif Ali Khan',
       firstName: 'saif'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/Df7rnvP/sharman-joshi-in-taarak.jpg',
       traits: '',
       tags: '',
       fullName: 'Sharman Joshi',
       firstName: 'sharman'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/jHp5Khv/download-28.jpg',
       traits: '',
       tags: '',
       fullName: 'Sunny Deol',
       firstName: 'sunny'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/KxjCtKG/e35523238ad51729b96e20860d3fdf72.jpga',
       traits: '',
       tags: '',
       fullName: 'Sanjay Dutt',
       firstName: 'sanjay'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/M1ybStF/Suniel-Shetty-to-make-his-OTT-debut-with-Invisible-Woman.jpg',
       traits: '',
       tags: '',
       fullName: 'Suniel Shetty',
       firstName: 'suniel'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/yYmgMy7/Tiger-Shroff.jpg',
       traits: '',
       tags: '',
       fullName: 'Tiger Shroff',
       firstName: 'tiger'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/GvZGQ8j/download-29.jpg',
       traits: '',
       tags: '',
       fullName: 'Varun Dhawan',
       firstName: 'varun'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/1spL92v/Vega-Entertainment-Wishes-a-Very-Happy-Birthday-to-Actor-Daggubati-Venkatesh-Daggubati-Venkatesh-Act.jpg',
       traits: '',
       tags: '',
       fullName: 'Venkatesh Daggubati',
       firstName: 'venkatesh'
   },
   {
-      image: '',
-      traits: '',
-      tags: '',
-      fullName: 'Yashpal Sharma',
-      firstName: 'yashpal'
-  },
-  {
-      image: '',
+      image: 'https://i.ibb.co/WVTSZ9h/Jr-NTR-1.jpg',
       traits: '',
       tags: '',
       fullName: 'NTR Junior',
       firstName: 'ntr'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/LC7TZ7c/download-30.jpg',
       traits: '',
       tags: '',
       fullName: 'Allu Arjun',
       firstName: 'allu'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/SPdcMxS/download-31.jpg',
       traits: '',
       tags: '',
       fullName: 'vijay sethupathi',
       firstName: 'vijay'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/Xj28JMz/36bf035cd846fea751460f40255d6eb5.jpg',
       traits: '',
       tags: '',
       fullName: 'vijay thalapathy',
       firstName: 'vijay'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/h2gGHb9/Suriya.jpg',
       traits: '',
-      tags: 'aukat dikha diya',
+      tags: '',
       fullName: 'Suriya Sivakumar',
       firstName: 'suriya'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/q5SwdYZ/Maari-dhanush-mass-hd-still.jpg',
       traits: '',
       tags: '',
       fullName: 'Venkatesh Prabhu Kasthuri Raja dhanush',
       lastName: 'dhanush'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/5F401zm/RRR-Movie-hd-wallpaper-rrr-ramcharan-Ram-Charan-hd-wallpaper.jpg',
       traits: '',
       tags: '',
       fullName: 'Ram Charan',
       firstName: 'ram'
   },
   {
-      image: '',
+      image: 'https://i.ibb.co/BzHbM57/Ajith-image-thunivu-pics.jpg',
       traits: '',
       tags: '',
       fullName: 'Ajith Kumar',
       firstName: 'ajith'
   },
-  {
-      image: '',
-      traits: '',
-      tags: '',
-      fullName: 'Kennedy John Victor Vikram',
-      lastName: 'vikram'
-  },
-  {
-      image: '',
-      traits: '',
-      tags: '',
-      fullName: 'Dulquer Salmaan',
-      firstName: 'dulquer'
-  },
-  {
-      image: '',
-      traits: '',
-      tags: '',
-      fullName: 'Pawan Kalyan',
-      firstName: 'pawan'
-  },
-  {
-      image: '',
-      traits: '',
-      tags: '',
-      fullName: 'Rana Daggubati',
-      firstName: 'rana'
-  },
-  {
-      image: '',
-      traits: '',
-      tags: '',
-      fullName: 'Naveen Kumar Gowda yash',
-      lastName: 'yash'
-  },
-  {
-      image: '',
-      traits: '',
-      tags: '',
-      fullName: 'Fahadh Faasil',
-      firstName: 'fahadh faasil'
-  },
-  {
-      image: '',
-      traits: '',
-      tags: '',
-      fullName: 'Karthik Sivakumar',
-      firstName: 'karthik'
-  },
-  {
-      image: '',
-      traits: '',
-      tags: '',
-      fullName: 'ravi teja',
-      firstName: 'ravi'
-  },
-  {
-      image: '',
-      traits: '',
-      tags: '',
-      fullName: 'Naveen Babu Ghanta aka Nani',
-      firstName: 'nani'
-  },
-  {
-      image: '',
-      traits: '',
-      tags: '',
-      fullName: 'Nandamuri Balakrishna',
-      firstName: 'nandamuri'
-  },
-  {
-      image: '',
-      traits: '',
-      tags: '',
-      fullName: 'R. Madhavan',
-      lastName: 'Madhavan'
-  },
-  {
-      image: '',
-      traits: '',
-      tags: '',
-      fullName: 'Naga Chaitanya',
-      firstName: 'naga'
-  },
-  {
-      image: '',
-      traits: '',
-      tags: '',
-      fullName: 'Deepak Adhikari dev',
-      lastName: 'dev'
-  },
-  {
-      image: '',
-      traits: '',
-      tags: '',
-      fullName: 'Jeetendra Madnani',
-      firstName: 'jeet'
-  },
-  {
-      image: '',
-      traits: '',
-      tags: '',
-      fullName: 'Bryan Cranston',
-      firstName: 'bryan'
-  },
-  {
-      image: '',
-      traits: '',
-      tags: '',
-      fullName: 'Aaron Paul',
-      firstName: 'Aaron'
-  },
-  {
-      image: '',
-      traits: '',
-      tags: '',
-      fullName: 'Dean Norris',
-      firstName: 'dean'
-  },
-  {
-      image: '',
-      traits: '',
-      tags: '',
-      fullName: 'Jonathan Banks',
-      firstName: 'jonathan'
-  },
-  {
-      image: '',
-      traits: '',
-      tags: '',
-      fullName: 'Bob Odenkirk',
-      firstName: 'bob'
-  },
-  {
-      image: '',
-      traits: '',
-      tags: '',
-      fullName: 'zack Snyder',
-      firstName: 'zack'
-  },
-  {
-      image: '',
-      traits: '',
-      tags: '',
-      fullName: 'Tom Hanks',
-      firstName: 'tom'
-  },
-  {
-      image: '',
-      traits: '',
-      tags: '',
-      fullName: 'Samuel L. Jackson',
-      firstName: 'samuel'
-  },
-  {
-      image: '',
-      traits: '',
-      tags: '',
-      fullName: 'Robert Pattinson',
-      firstName: 'robert'
-  },
-  {
-    image: '',
-    traits: '',
-    tags: '',
-    fullName: 'Arthur Fleck',
-    firstName: 'arthur'
-  },
-  {
-    image: '',
-    traits: '',
-    tags: '',
-    fullName: 'Al Pacino',
-    firstName: 'al'
-  },
-  {
-    image: '',
-    traits: '',
-    tags: '',
-    fullName: 'Michael Caine',
-    firstName: 'michael'
-  },
-  {
-    image: '',
-    traits: '',
-    tags: '',
-    fullName: 'Cillian Murphy',
-    firstName: 'cillian'
-  },
-  {
-    image: '',
-    traits: '',
-    tags: '',
-    fullName: 'Jackie Chan',
-    firstName: 'jackie'
-  },
-  {
-    image: '',
-    traits: '',
-    tags: '',
-    fullName: 'Chris Tucker',
-    firstName: 'chris'
-  },
-  {
-        image: '',
-        traits: '',
-        tags: '',
-        fullName: 'Jacob Batalon',
-        firstName: 'jacob'
-    },
  {
-        image: '',
+        image: 'https://i.ibb.co/HBh3YB9/90-Legendary-Tollywood-Telugu-Cinema-Heroes-1957-2023.jpg',
         traits: '',
         tags: '',
-        fullName: 'Tobey Maguire',
-        firstName: 'tobey'
-    },
- {
-        image: '',
-        traits: '',
-        tags: '',
-        fullName: 'Willem Dafoe',
-        firstName: 'willem'
-    },
-  {
-        image: '',
-        traits: '',
-        tags: '',
-        fullName: 'J. K. Simmons',
-        firstName: 'jk'
-    },
- {
-        image: '',
-        traits: '',
-        tags: '',
-        fullName: 'Benedict Cumberbatch',
-        firstName: 'bendict'
-    },
- {
-        image: '',
-        traits: '',
-        tags: '',
-        fullName: 'Andrew Garfield',
-        firstName: 'andrew'
-    },
-  {
-        image: '',
-        traits: '',
-        tags: '',
-        fullName: 'Matthew McConaughey',
-        firstName: 'matthew'
-    },
- {
-        image: '',
-        traits: '',
-        tags: '',
-        fullName: 'Tom Ellis',
-        firstName: 'tom'
-    },
- {
-        image: '',
-        traits: '',
-        tags: '',
-        fullName: 'Kevin Alejandro',
-        firstName: 'kevin'
-    },
-  {
-        image: '',
-        traits: '',
-        tags: '',
-        fullName: 'D.B. Woodside',
-        lastName: 'woodside'
-    },
- {
-        image: '',
-        traits: '',
-        tags: '',
-        fullName: 'Dennis Haysbert',
-        firstName: 'dennis'
+        fullName: 'vijay deverkonda',
+        firstName: 'vijay'
     },
  {
         image: 'https://i.ibb.co/cXY7VRv/423568496.jpg',
         traits: '',
-        tags: 'coder',
+        tags: '',
         fullName: 'kshitiz',
         firstName: 'cutiz'
     },
